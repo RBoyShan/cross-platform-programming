@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFAppCore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAppCore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid">
+
+        <Label Padding="200 130">
+            <TextBox Grid.Row="1"
+                     Width="400"
+                     Height="70"
+                     Padding="10"
+                     FontSize="35"
+                     Foreground="#121212"
+                     Background="Azure"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Name="enterDataField"
+            > 
+            </TextBox>
+        </Label>
+        
+        <Button Grid.Row="3"
+                Width="400"
+                Height="70"
+                Margin="0 100 0 0"
+                FontSize="35"
+                FontWeight="DemiBold"
+                Cursor="Hand"
+                Name="actionButton"
+                Click="ShowNumber"
+        >
+            Click Me!
+        </Button>
+    </Grid>
+</Window>
